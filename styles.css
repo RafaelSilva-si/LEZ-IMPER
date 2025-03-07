@@ -521,6 +521,33 @@ video {
     animation: pulse 2s infinite;
 }
 
+.faq-card {
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.faq-question {
+    font-size: 1rem !important;
+    font-weight: bold;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.faq-answer {
+    font-size: 0.9rem !important;
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar {
