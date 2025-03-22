@@ -196,11 +196,7 @@ video {
 }
 
 .service-1-content {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     margin-top: 1.5rem;
 }
 
@@ -214,8 +210,8 @@ video {
 }
 
 .service-1 .text-container {
-    flex: 1;
     max-width: 600px;
+    margin: 0 auto;
 }
 
 .service-1 .text-container p {
@@ -239,11 +235,7 @@ video {
 
 /* Flexbox Layout */
 .service-3 .service-3-content {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     margin-top: 1.5rem;
 }
 
@@ -260,6 +252,7 @@ video {
     flex: 1;
     max-width: 600px;
     margin-bottom: 1.5rem;
+    margin: 0 auto;
 }
 
 .service-3 .text-container p {
@@ -291,11 +284,8 @@ video {
 }
 
 .service-4-content {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 2rem;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
     margin-top: 1.5rem;
 }
 
@@ -308,8 +298,8 @@ video {
 }
 
 .service-4 .text-container {
-    flex: 1;
     max-width: 600px;
+    margin: 0 auto;
 }
 
 .service-4 .text-container p {
@@ -407,6 +397,9 @@ video {
     text-align: center;
 }
 
+.about-us img {
+    max-width: 100%;
+}
 .about-us h2 {
     font-size: 2.2rem;
     font-weight: 700;
@@ -433,10 +426,9 @@ video {
 
 .location .container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .location .map-container {
