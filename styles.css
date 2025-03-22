@@ -98,10 +98,10 @@ video {
 /* Hero Section */
 .hero {
     background: url('./assets/banner.jpg');
-    background-size: cover;
+    background-size: cover; /* Garante que a imagem cubra toda a área */
+    background-position: center center; /* Centraliza a imagem */
     background-repeat: no-repeat;
-    background-position: right center;
-    padding: 3rem 0;
+    padding: 6rem 0; /* Aumenta o padding para mais espaçamento */
     color: #fff;
     position: relative;
 }
@@ -113,37 +113,74 @@ video {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(12, 30, 60, 0.8);
-    z-index: 1; /* Coloca a camada acima do background, mas abaixo do conteúdo */
+    background: rgba(12, 30, 60, 0.8); /* Fundo escuro para melhorar contraste */
+    z-index: 1; /* Camada abaixo do conteúdo */
 }
 
 .hero h1 {
     position: relative;
     z-index: 2;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 4rem; /* Aumenta o tamanho da fonte para desktop */
+    margin-bottom: 3rem; /* Mais espaço abaixo do título */
     font-weight: 900;
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.99);
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.99);
+    text-align: center; /* Centraliza o título */
 }
 
 .hero p {
-    margin-bottom: 2rem;
-    font-size: 1.2rem;
-}
-
-.logo {
     position: relative;
     z-index: 2;
-    width: 50%;
-    margin-bottom: -40px;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    text-align: center; /* Centraliza o texto */
 }
 
+/* Logo */
+.hero .logo {
+    position: relative;
+    z-index: 2;
+    width: 25%; /* Diminui a largura do logo no desktop */
+    margin-bottom: -40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centraliza o logo */
+}
+
+/* Ícone vegano */
 .vegan-icon {
     position: absolute;
     bottom: 70px;
     right: 0px;
-    width: 100px;
+    width: 120px; /* Aumenta o ícone vegano */
     z-index: 2;
+}
+
+/* Botão Orçamento */
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    padding: 1rem 2rem; /* Aumenta o padding para deixar o botão mais visível */
+    font-size: 1.2rem;
+    background: #367FB9;
+    border: 1px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    gap: 0.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-primary i {
+    font-size: 1.5rem; /* Aumenta o tamanho do ícone */
+}
+
+.btn-primary:hover {
+    background: #0056b3;
 }
 
 /* Service-1 Section */
@@ -555,12 +592,34 @@ video {
         align-items: flex-start;
     }
 
+    /* Hero Section */
+    .hero {
+        padding: 3rem 0; /* Menos padding em telas menores */
+    }
+
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 2.5rem; /* Tamanho reduzido do título para mobile */
     }
 
     .hero p {
-        font-size: 1rem;
+        font-size: 1rem; /* Tamanho reduzido do texto */
+    }
+
+    .hero .logo {
+        width: 60%; /* Logo um pouco maior no mobile */
+    }
+
+    .vegan-icon {
+        width: 80px; /* Ajusta o ícone vegano */
+        bottom: 90px; /* Move o ícone mais para baixo */
+    }
+
+    .btn-primary {
+        padding: 0.8rem 1.5rem; /* Diminui o padding no mobile */
+    }
+
+    .btn-primary i {
+        font-size: 1rem; /* Reduz o tamanho do ícone */
     }
 
     .service-list {
