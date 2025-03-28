@@ -97,7 +97,7 @@ video {
 
 /* Hero Section */
 .hero {
-    background: url('./assets/banner.jpg');
+    background: url('./assets/banner.webp');
     background-size: cover; /* Garante que a imagem cubra toda a área */
     background-position: center center; /* Centraliza a imagem */
     background-repeat: no-repeat;
